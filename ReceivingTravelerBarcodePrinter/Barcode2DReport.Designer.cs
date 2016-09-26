@@ -201,7 +201,7 @@
             // xrBarCodeEnter
             // 
             this.xrBarCodeEnter.AutoModule = true;
-            this.xrBarCodeEnter.LocationFloat = new DevExpress.Utils.PointFloat(698.8332F, 10.00001F);
+            this.xrBarCodeEnter.LocationFloat = new DevExpress.Utils.PointFloat(698.8332F, 24.29166F);
             this.xrBarCodeEnter.Name = "xrBarCodeEnter";
             this.xrBarCodeEnter.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.xrBarCodeEnter.ShowText = false;
@@ -779,7 +779,7 @@
             // xrLabel37
             // 
             this.xrLabel37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(705.0832F, 51.75003F);
+            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(705.0832F, 66.04168F);
             this.xrLabel37.Name = "xrLabel37";
             this.xrLabel37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel37.SizeF = new System.Drawing.SizeF(62.5F, 23F);

@@ -21,7 +21,7 @@ namespace ReceivingTravelerBarcodePrinter
 
        private static List<int> notNullColumns = new List<int>
        {
-           colPO,colSupplier,colPN,colQTY,colDN
+           colPO,colSupplier,colPN,colQTY,colDN,colDate
        };
        public static List<int> NotNullColumns
        {

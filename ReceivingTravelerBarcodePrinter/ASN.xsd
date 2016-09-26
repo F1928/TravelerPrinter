@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ASN" targetNamespace="http://tempuri.org/ASN.xsd" xmlns:mstns="http://tempuri.org/ASN.xsd" xmlns="http://tempuri.org/ASN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ASN" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ASN" msprop:Generator_UserDSName="ASN">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ASN_MST" msprop:Generator_TableClassName="ASN_MSTDataTable" msprop:Generator_TableVarName="tableASN_MST" msprop:Generator_TablePropName="ASN_MST" msprop:Generator_RowDeletingName="ASN_MSTRowDeleting" msprop:Generator_RowChangingName="ASN_MSTRowChanging" msprop:Generator_RowEvHandlerName="ASN_MSTRowChangeEventHandler" msprop:Generator_RowDeletedName="ASN_MSTRowDeleted" msprop:Generator_UserTableName="ASN_MST" msprop:Generator_RowChangedName="ASN_MSTRowChanged" msprop:Generator_RowEvArgName="ASN_MSTRowChangeEvent" msprop:Generator_RowClassName="ASN_MSTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="NO" msprop:Generator_ColumnVarNameInTable="columnNO" msprop:Generator_ColumnPropNameInRow="NO" msprop:Generator_ColumnPropNameInTable="NOColumn" msprop:Generator_UserColumnName="NO" type="xs:string" />
+              <xs:element name="DN" msprop:Generator_ColumnVarNameInTable="columnDN" msprop:Generator_ColumnPropNameInRow="DN" msprop:Generator_ColumnPropNameInTable="DNColumn" msprop:Generator_UserColumnName="DN" type="xs:string" />
+              <xs:element name="PALLET_NO" msprop:Generator_ColumnVarNameInTable="columnPALLET_NO" msprop:Generator_ColumnPropNameInRow="PALLET_NO" msprop:Generator_ColumnPropNameInTable="PALLET_NOColumn" msprop:Generator_UserColumnName="PALLET_NO" type="xs:string" />
+              <xs:element name="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" type="xs:string" minOccurs="0" />
+              <xs:element name="DN_BCD" msprop:Generator_ColumnVarNameInTable="columnDN_BCD" msprop:Generator_ColumnPropNameInRow="DN_BCD" msprop:Generator_ColumnPropNameInTable="DN_BCDColumn" msprop:Generator_UserColumnName="DN_BCD" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_QTY" msprop:Generator_ColumnVarNameInTable="columnTOTAL_QTY" msprop:Generator_ColumnPropNameInRow="TOTAL_QTY" msprop:Generator_ColumnPropNameInTable="TOTAL_QTYColumn" msprop:Generator_UserColumnName="TOTAL_QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_UserColumnName="DATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ASN_DTL" msprop:Generator_TableClassName="ASN_DTLDataTable" msprop:Generator_TableVarName="tableASN_DTL" msprop:Generator_TablePropName="ASN_DTL" msprop:Generator_RowDeletingName="ASN_DTLRowDeleting" msprop:Generator_RowChangingName="ASN_DTLRowChanging" msprop:Generator_RowEvHandlerName="ASN_DTLRowChangeEventHandler" msprop:Generator_RowDeletedName="ASN_DTLRowDeleted" msprop:Generator_UserTableName="ASN_DTL" msprop:Generator_RowChangedName="ASN_DTLRowChanged" msprop:Generator_RowEvArgName="ASN_DTLRowChangeEvent" msprop:Generator_RowClassName="ASN_DTLRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="PO" msprop:Generator_ColumnVarNameInTable="columnPO" msprop:Generator_ColumnPropNameInRow="PO" msprop:Generator_ColumnPropNameInTable="POColumn" msprop:Generator_UserColumnName="PO" type="xs:string" />
+              <xs:element name="WO" msprop:Generator_ColumnVarNameInTable="columnWO" msprop:Generator_ColumnPropNameInRow="WO" msprop:Generator_ColumnPropNameInTable="WOColumn" msprop:Generator_UserColumnName="WO" type="xs:string" />
+              <xs:element name="PO_BCD" msprop:Generator_ColumnVarNameInTable="columnPO_BCD" msprop:Generator_ColumnPropNameInRow="PO_BCD" msprop:Generator_ColumnPropNameInTable="PO_BCDColumn" msprop:Generator_UserColumnName="PO_BCD" type="xs:string" minOccurs="0" />
+              <xs:element name="WO_BCD" msprop:Generator_ColumnVarNameInTable="columnWO_BCD" msprop:Generator_ColumnPropNameInRow="WO_BCD" msprop:Generator_ColumnPropNameInTable="WO_BCDColumn" msprop:Generator_UserColumnName="WO_BCD" type="xs:string" minOccurs="0" />
+              <xs:element name="MST_ID" msprop:Generator_ColumnVarNameInTable="columnMST_ID" msprop:Generator_ColumnPropNameInRow="MST_ID" msprop:Generator_ColumnPropNameInTable="MST_IDColumn" msprop:Generator_UserColumnName="MST_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="KEY" msprop:Generator_ColumnVarNameInTable="columnKEY" msprop:Generator_ColumnPropNameInRow="KEY" msprop:Generator_ColumnPropNameInTable="KEYColumn" msprop:Generator_UserColumnName="KEY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ASN_PN_QTY" msprop:Generator_TableClassName="ASN_PN_QTYDataTable" msprop:Generator_TableVarName="tableASN_PN_QTY" msprop:Generator_TablePropName="ASN_PN_QTY" msprop:Generator_RowDeletingName="ASN_PN_QTYRowDeleting" msprop:Generator_RowChangingName="ASN_PN_QTYRowChanging" msprop:Generator_RowEvHandlerName="ASN_PN_QTYRowChangeEventHandler" msprop:Generator_RowDeletedName="ASN_PN_QTYRowDeleted" msprop:Generator_UserTableName="ASN_PN_QTY" msprop:Generator_RowChangedName="ASN_PN_QTYRowChanged" msprop:Generator_RowEvArgName="ASN_PN_QTYRowChangeEvent" msprop:Generator_RowClassName="ASN_PN_QTYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="PN" msprop:Generator_ColumnVarNameInTable="columnPN" msprop:Generator_ColumnPropNameInRow="PN" msprop:Generator_ColumnPropNameInTable="PNColumn" msprop:Generator_UserColumnName="PN" type="xs:string" />
+              <xs:element name="REV" msprop:Generator_ColumnVarNameInTable="columnREV" msprop:Generator_ColumnPropNameInRow="REV" msprop:Generator_ColumnPropNameInTable="REVColumn" msprop:Generator_UserColumnName="REV" type="xs:string" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PN_BCD" msprop:Generator_ColumnVarNameInTable="columnPN_BCD" msprop:Generator_ColumnPropNameInRow="PN_BCD" msprop:Generator_ColumnPropNameInTable="PN_BCDColumn" msprop:Generator_UserColumnName="PN_BCD" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY_BCD" msprop:Generator_ColumnVarNameInTable="columnQTY_BCD" msprop:Generator_ColumnPropNameInRow="QTY_BCD" msprop:Generator_ColumnPropNameInTable="QTY_BCDColumn" msprop:Generator_UserColumnName="QTY_BCD" type="xs:string" minOccurs="0" />
+              <xs:element name="DTL_ID" msprop:Generator_ColumnVarNameInTable="columnDTL_ID" msprop:Generator_ColumnPropNameInRow="DTL_ID" msprop:Generator_ColumnPropNameInTable="DTL_IDColumn" msprop:Generator_UserColumnName="DTL_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASN_MST" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ASN_DTL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASN_DTL" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ASN_PN_QTY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASN_PN_QTY" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="ASN_MST_ASN_DTL" msdata:parent="ASN_MST" msdata:child="ASN_DTL" msdata:parentkey="ID" msdata:childkey="MST_ID" msprop:Generator_UserChildTable="ASN_DTL" msprop:Generator_ChildPropName="GetASN_DTLRows" msprop:Generator_UserRelationName="ASN_MST_ASN_DTL" msprop:Generator_RelationVarName="relationASN_MST_ASN_DTL" msprop:Generator_UserParentTable="ASN_MST" msprop:Generator_ParentPropName="ASN_MSTRow" />
+      <msdata:Relationship name="ASN_DTL_ASN_PN_QTY" msdata:parent="ASN_DTL" msdata:child="ASN_PN_QTY" msdata:parentkey="ID" msdata:childkey="DTL_ID" msprop:Generator_UserChildTable="ASN_PN_QTY" msprop:Generator_ChildPropName="GetASN_PN_QTYRows" msprop:Generator_UserRelationName="ASN_DTL_ASN_PN_QTY" msprop:Generator_RelationVarName="relationASN_DTL_ASN_PN_QTY" msprop:Generator_UserParentTable="ASN_DTL" msprop:Generator_ParentPropName="ASN_DTLRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -25,6 +25,9 @@ namespace ReceivingTravelerBarcodePrinter
             this.ShowPreview();
         }
 
+		///<summary>
+		/// test
+		///</summary>
         public void Print(string printerName)
         {
             this.Print(printerName);

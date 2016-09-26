@@ -12,7 +12,7 @@ namespace ReceivingTravelerBarcodePrinter
         public Barcode2DReport()
         {
             InitializeComponent();
-            this.xrBarCodeEnter.Text = string.Format("{0}{0}{1}{2}",(char)Keys.Tab,(char)Keys.Enter,2);
+            this.xrBarCodeEnter.Text = string.Format("{0}{1}{2}",(char)Keys.Tab,(char)Keys.Enter,2);
         }
 
         public void SetDataSet(ASN asnDs)

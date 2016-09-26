@@ -51,9 +51,6 @@
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.DetailReport = new DevExpress.XtraReports.UI.DetailReportBand();
             this.DetailOfDtl = new DevExpress.XtraReports.UI.DetailBand();
-            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
@@ -78,6 +75,9 @@
             this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrBarCode6 = new DevExpress.XtraReports.UI.XRBarCode();
             this.asn = new ReceivingTravelerBarcodePrinter.ASN();
+            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.calibriStyle10 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.calibriStyle10Bold = new DevExpress.XtraReports.UI.XRControlStyle();
             this.calibriStyle11 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -201,7 +201,7 @@
             // xrBarCodeEnter
             // 
             this.xrBarCodeEnter.AutoModule = true;
-            this.xrBarCodeEnter.LocationFloat = new DevExpress.Utils.PointFloat(699.25F, 27.29166F);
+            this.xrBarCodeEnter.LocationFloat = new DevExpress.Utils.PointFloat(698.8332F, 10.00001F);
             this.xrBarCodeEnter.Name = "xrBarCodeEnter";
             this.xrBarCodeEnter.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.xrBarCodeEnter.ShowText = false;
@@ -265,42 +265,6 @@
             this.xrLabel8});
             this.DetailOfDtl.HeightF = 107.3333F;
             this.DetailOfDtl.Name = "DetailOfDtl";
-            // 
-            // xrLabel18
-            // 
-            this.xrLabel18.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(632.125F, 92.04169F);
-            this.xrLabel18.Multiline = true;
-            this.xrLabel18.Name = "xrLabel18";
-            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel18.SizeF = new System.Drawing.SizeF(28.125F, 22.91666F);
-            this.xrLabel18.StyleName = "calibriStyle11";
-            this.xrLabel18.StylePriority.UseFont = false;
-            this.xrLabel18.Text = "INV";
-            // 
-            // xrLabel17
-            // 
-            this.xrLabel17.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(558.9167F, 92.04169F);
-            this.xrLabel17.Multiline = true;
-            this.xrLabel17.Name = "xrLabel17";
-            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel17.SizeF = new System.Drawing.SizeF(28.125F, 22.91659F);
-            this.xrLabel17.StyleName = "calibriStyle11";
-            this.xrLabel17.StylePriority.UseFont = false;
-            this.xrLabel17.Text = "IQC";
-            // 
-            // xrLabel16
-            // 
-            this.xrLabel16.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(481.0834F, 92.04169F);
-            this.xrLabel16.Multiline = true;
-            this.xrLabel16.Name = "xrLabel16";
-            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel16.SizeF = new System.Drawing.SizeF(28.125F, 22.9166F);
-            this.xrLabel16.StyleName = "calibriStyle11";
-            this.xrLabel16.StylePriority.UseFont = false;
-            this.xrLabel16.Text = "RCV";
             // 
             // xrLabel15
             // 
@@ -497,7 +461,7 @@
             this.xrBarCode4.AutoModule = true;
             this.xrBarCode4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.PN_BCD")});
-            this.xrBarCode4.LocationFloat = new DevExpress.Utils.PointFloat(204.1667F, 8.916633F);
+            this.xrBarCode4.LocationFloat = new DevExpress.Utils.PointFloat(219.2917F, 8.916664F);
             this.xrBarCode4.Name = "xrBarCode4";
             this.xrBarCode4.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.xrBarCode4.ShowText = false;
@@ -512,10 +476,10 @@
             this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.PN")});
             this.xrLabel19.Font = new System.Drawing.Font("黑体", 18F);
-            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(27.62503F, 14.91664F);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(27.62502F, 14.91661F);
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel19.SizeF = new System.Drawing.SizeF(162.6666F, 23F);
+            this.xrLabel19.SizeF = new System.Drawing.SizeF(191.6667F, 23F);
             this.xrLabel19.StyleName = "calibriStyle11";
             this.xrLabel19.StylePriority.UseFont = false;
             this.xrLabel19.WordWrap = false;
@@ -604,6 +568,42 @@
             // 
             this.asn.DataSetName = "ASN";
             this.asn.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // xrLabel18
+            // 
+            this.xrLabel18.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(660.7916F, 92.04162F);
+            this.xrLabel18.Multiline = true;
+            this.xrLabel18.Name = "xrLabel18";
+            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel18.SizeF = new System.Drawing.SizeF(28.125F, 22.91666F);
+            this.xrLabel18.StyleName = "calibriStyle11";
+            this.xrLabel18.StylePriority.UseFont = false;
+            this.xrLabel18.Text = "INV";
+            // 
+            // xrLabel17
+            // 
+            this.xrLabel17.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(543.2917F, 92.04169F);
+            this.xrLabel17.Multiline = true;
+            this.xrLabel17.Name = "xrLabel17";
+            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(28.125F, 22.91659F);
+            this.xrLabel17.StyleName = "calibriStyle11";
+            this.xrLabel17.StylePriority.UseFont = false;
+            this.xrLabel17.Text = "IQC";
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(428.5417F, 92.04169F);
+            this.xrLabel16.Multiline = true;
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.SizeF = new System.Drawing.SizeF(28.125F, 22.9166F);
+            this.xrLabel16.StyleName = "calibriStyle11";
+            this.xrLabel16.StylePriority.UseFont = false;
+            this.xrLabel16.Text = "RCV";
             // 
             // calibriStyle10
             // 
@@ -779,7 +779,7 @@
             // xrLabel37
             // 
             this.xrLabel37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(703.2916F, 73.04168F);
+            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(705.0832F, 51.75003F);
             this.xrLabel37.Name = "xrLabel37";
             this.xrLabel37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel37.SizeF = new System.Drawing.SizeF(62.5F, 23F);

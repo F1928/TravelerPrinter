@@ -461,7 +461,7 @@
             this.xrBarCode4.AutoModule = true;
             this.xrBarCode4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.PN_BCD")});
-            this.xrBarCode4.LocationFloat = new DevExpress.Utils.PointFloat(219.2917F, 8.916664F);
+            this.xrBarCode4.LocationFloat = new DevExpress.Utils.PointFloat(234.2918F, 8.916664F);
             this.xrBarCode4.Name = "xrBarCode4";
             this.xrBarCode4.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.xrBarCode4.ShowText = false;
@@ -479,7 +479,7 @@
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(27.62502F, 14.91661F);
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel19.SizeF = new System.Drawing.SizeF(191.6667F, 23F);
+            this.xrLabel19.SizeF = new System.Drawing.SizeF(206.6668F, 23F);
             this.xrLabel19.StyleName = "calibriStyle11";
             this.xrLabel19.StylePriority.UseFont = false;
             this.xrLabel19.WordWrap = false;

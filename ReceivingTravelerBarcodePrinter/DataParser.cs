@@ -65,9 +65,9 @@ namespace ReceivingTravelerBarcodePrinter
             var qMst = (from x in tb.AsEnumerable()
                         select new
                         {
-                            SUPPLIER = x.Field<string>(Col.colSupplier),
-                            PALLET_NO = x.Field<string>(Col.colPalletNO),
-                            DN = x.Field<string>(Col.colDN)
+                            SUPPLIER = x[Col.colSupplier].ToString(),
+                            PALLET_NO = x[Col.colPalletNO].ToString(),
+                            DN = x[Col.colDN].ToString()
                         }).Distinct();
 
             var orderedMst = from x in qMst
@@ -86,7 +86,7 @@ namespace ReceivingTravelerBarcodePrinter
                 if (tb.Columns[Col.colDate].DataType == typeof(DateTime))
                 {
                     theDate = tb.AsEnumerable()
-                                .Where(f=>f.Field<string>(Col.colDN)==x.DN)
+                                .Where(f=>f[Col.colDN].ToString()==x.DN)
                                 .First()
                                 .Field<DateTime>(Col.colDate)
                                 .ToString("yyyy-MM-dd");
@@ -94,7 +94,7 @@ namespace ReceivingTravelerBarcodePrinter
                 else
                 {
                     theDate = tb.AsEnumerable()
-                                .Where(f => f.Field<string>(Col.colDN) == x.DN)
+                                .Where(f => f[Col.colDN].ToString() == x.DN)
                                 .First()
                                 .Field<string>(Col.colDate);
                     theDate = DateTime.Parse(theDate).ToString("yyyy-MM-dd");
@@ -158,7 +158,7 @@ namespace ReceivingTravelerBarcodePrinter
                               && q[Col.colSupplier].ToString() == x.SUPPLIER
                               && q[Col.colPO].ToString() == d.PO
                               && q[Col.colWO].ToString() == d.WO
-                               orderby q.Field<string>(Col.colPN)
+                               orderby q[Col.colPN].ToString()
                                select new
                                {
                                    PN = q[Col.colPN].ToString(),

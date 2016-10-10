@@ -112,7 +112,7 @@
             // 
             this.openFileDialog.DefaultExt = "xlsx";
             this.openFileDialog.FileName = "openFileDialog";
-            this.openFileDialog.Filter = "Excel文件(*.xlsx)|*.xlsx|Excel文件(*xls)|*.xls";
+            this.openFileDialog.Filter = "Excel文件|*.xls*";
             // 
             // asn
             // 

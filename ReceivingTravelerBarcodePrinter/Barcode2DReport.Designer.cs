@@ -127,7 +127,7 @@
             this.xrLabel7.CanGrow = false;
             this.xrLabel7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.DN")});
-            this.xrLabel7.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel7.Font = new System.Drawing.Font("黑体", 12F);
             this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(72.49998F, 117.0417F);
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -153,7 +153,7 @@
             this.xrLabel5.CanGrow = false;
             this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.PALLET_NO")});
-            this.xrLabel5.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel5.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Bold);
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(72.49998F, 94.04166F);
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -177,7 +177,7 @@
             this.xrLabel3.CanGrow = false;
             this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.SUPPLIER")});
-            this.xrLabel3.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel3.Font = new System.Drawing.Font("黑体", 14F);
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(72.49998F, 71.04168F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -344,7 +344,7 @@
             this.xrLabel11.CanGrow = false;
             this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.WO")});
-            this.xrLabel11.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel11.Font = new System.Drawing.Font("黑体", 18F, System.Drawing.FontStyle.Bold);
             this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(495.8334F, 11.12499F);
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -372,7 +372,7 @@
             this.xrLabel9.CanGrow = false;
             this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.PO")});
-            this.xrLabel9.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel9.Font = new System.Drawing.Font("黑体", 18F, System.Drawing.FontStyle.Bold);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(56.95832F, 11.125F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -419,7 +419,7 @@
             this.xrLabel29.AutoWidth = true;
             this.xrLabel29.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.REV")});
-            this.xrLabel29.Font = new System.Drawing.Font("黑体", 16F);
+            this.xrLabel29.Font = new System.Drawing.Font("黑体", 14F);
             this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(369.375F, 19.91664F);
             this.xrLabel29.Name = "xrLabel29";
             this.xrLabel29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -446,7 +446,7 @@
             this.xrLabel20.CanGrow = false;
             this.xrLabel20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.QTY")});
-            this.xrLabel20.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel20.Font = new System.Drawing.Font("黑体", 14F);
             this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(532.3331F, 19.91661F);
             this.xrLabel20.Name = "xrLabel20";
             this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -474,7 +474,7 @@
             this.xrLabel19.CanGrow = false;
             this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.PN")});
-            this.xrLabel19.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel19.Font = new System.Drawing.Font("黑体", 14F);
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(27.62502F, 19.91661F);
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -539,7 +539,7 @@
             this.xrLabel21.CanGrow = false;
             this.xrLabel21.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.ASN_MST_ASN_DTL.ASN_DTL_ASN_PN_QTY.QTY")});
-            this.xrLabel21.Font = new System.Drawing.Font("黑体", 18F);
+            this.xrLabel21.Font = new System.Drawing.Font("黑体", 14F);
             this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(296.4583F, 6.875102F);
             this.xrLabel21.Name = "xrLabel21";
             this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -560,6 +560,7 @@
             this.xrBarCode6.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
             this.xrBarCode6.ShowText = false;
             this.xrBarCode6.SizeF = new System.Drawing.SizeF(88.83325F, 41.75002F);
+            dataMatrixGenerator6.MatrixSize = DevExpress.XtraPrinting.BarCode.DataMatrixSize.Matrix10x10;
             this.xrBarCode6.Symbology = dataMatrixGenerator6;
             // 
             // asn
@@ -731,7 +732,7 @@
             // xrCrossBandBox1
             // 
             this.xrCrossBandBox1.BorderColor = System.Drawing.Color.Silver;
-            this.xrCrossBandBox1.BorderWidth = 1F;
+            this.xrCrossBandBox1.BorderWidth = 2F;
             this.xrCrossBandBox1.EndBand = this.GroupFooterOfQTY;
             this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(22.91667F, 1.999982F);
             this.xrCrossBandBox1.LocationFloat = new DevExpress.Utils.PointFloat(22.91667F, 78.125F);
@@ -841,7 +842,7 @@
             this.xrLabel31.CanGrow = false;
             this.xrLabel31.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST.NO")});
-            this.xrLabel31.Font = new System.Drawing.Font("黑体", 14F);
+            this.xrLabel31.Font = new System.Drawing.Font("黑体", 12F);
             this.xrLabel31.LocationFloat = new DevExpress.Utils.PointFloat(72.49998F, 48.04166F);
             this.xrLabel31.Name = "xrLabel31";
             this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

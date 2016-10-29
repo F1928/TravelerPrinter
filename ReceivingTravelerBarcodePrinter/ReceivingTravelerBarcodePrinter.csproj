@@ -108,6 +108,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ASN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ASNDNReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ASNDNReport.Designer.cs">
+      <DependentUpon>ASNDNReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Barcode2DReport.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="Messenger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ASNDNReport.resx">
+      <DependentUpon>ASNDNReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Barcode2DReport.resx">
       <DependentUpon>Barcode2DReport.cs</DependentUpon>
     </EmbeddedResource>

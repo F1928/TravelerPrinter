@@ -3,16 +3,14 @@ using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using DevExpress.XtraReports.UI;
-using System.Windows.Forms;
 
 namespace ReceivingTravelerBarcodePrinter
 {
-    public partial class Barcode2DReport : DevExpress.XtraReports.UI.XtraReport
+    public partial class ASNDNReport : DevExpress.XtraReports.UI.XtraReport
     {
-        public Barcode2DReport()
+        public ASNDNReport()
         {
             InitializeComponent();
-            this.xrBarCodeEnter.Text = string.Format("{0}{1}{2}",(char)Keys.Tab,(char)Keys.Enter,2);
         }
 
         public void SetDataSet(ASN asnDs)
@@ -35,7 +33,5 @@ namespace ReceivingTravelerBarcodePrinter
         {
             this.Print(printerName);
         }
-
-        
     }
 }

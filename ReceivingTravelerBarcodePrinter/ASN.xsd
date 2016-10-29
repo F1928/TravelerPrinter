@@ -52,6 +52,34 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="ASN_DTL_GRID" msprop:Generator_TableClassName="ASN_DTL_GRIDDataTable" msprop:Generator_TableVarName="tableASN_DTL_GRID" msprop:Generator_RowChangedName="ASN_DTL_GRIDRowChanged" msprop:Generator_TablePropName="ASN_DTL_GRID" msprop:Generator_RowDeletingName="ASN_DTL_GRIDRowDeleting" msprop:Generator_RowChangingName="ASN_DTL_GRIDRowChanging" msprop:Generator_RowEvHandlerName="ASN_DTL_GRIDRowChangeEventHandler" msprop:Generator_RowDeletedName="ASN_DTL_GRIDRowDeleted" msprop:Generator_RowClassName="ASN_DTL_GRIDRow" msprop:Generator_UserTableName="ASN_DTL_GRID" msprop:Generator_RowEvArgName="ASN_DTL_GRIDRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="MST_ID" msprop:Generator_ColumnVarNameInTable="columnMST_ID" msprop:Generator_ColumnPropNameInRow="MST_ID" msprop:Generator_ColumnPropNameInTable="MST_IDColumn" msprop:Generator_UserColumnName="MST_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="NO" msprop:Generator_ColumnVarNameInTable="columnNO" msprop:Generator_ColumnPropNameInRow="NO" msprop:Generator_ColumnPropNameInTable="NOColumn" msprop:Generator_UserColumnName="NO" type="xs:int" minOccurs="0" />
+              <xs:element name="PO" msprop:Generator_ColumnVarNameInTable="columnPO" msprop:Generator_ColumnPropNameInRow="PO" msprop:Generator_ColumnPropNameInTable="POColumn" msprop:Generator_UserColumnName="PO" type="xs:string" minOccurs="0" />
+              <xs:element name="PN" msprop:Generator_ColumnVarNameInTable="columnPN" msprop:Generator_ColumnPropNameInRow="PN" msprop:Generator_ColumnPropNameInTable="PNColumn" msprop:Generator_UserColumnName="PN" type="xs:string" minOccurs="0" />
+              <xs:element name="REV" msprop:Generator_ColumnVarNameInTable="columnREV" msprop:Generator_ColumnPropNameInRow="REV" msprop:Generator_ColumnPropNameInTable="REVColumn" msprop:Generator_UserColumnName="REV" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WO" msprop:Generator_ColumnVarNameInTable="columnWO" msprop:Generator_ColumnPropNameInRow="WO" msprop:Generator_ColumnPropNameInTable="WOColumn" msprop:Generator_UserColumnName="WO" type="xs:string" minOccurs="0" />
+              <xs:element name="PALLET_NO" msprop:Generator_ColumnVarNameInTable="columnPALLET_NO" msprop:Generator_ColumnPropNameInRow="PALLET_NO" msprop:Generator_ColumnPropNameInTable="PALLET_NOColumn" msprop:Generator_UserColumnName="PALLET_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PAGER" msprop:Generator_ColumnVarNameInTable="columnPAGER" msprop:Generator_ColumnPropNameInRow="PAGER" msprop:Generator_ColumnPropNameInTable="PAGERColumn" msprop:Generator_UserColumnName="PAGER" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ASN_MST_GRID" msprop:Generator_TableClassName="ASN_MST_GRIDDataTable" msprop:Generator_TableVarName="tableASN_MST_GRID" msprop:Generator_RowChangedName="ASN_MST_GRIDRowChanged" msprop:Generator_TablePropName="ASN_MST_GRID" msprop:Generator_RowDeletingName="ASN_MST_GRIDRowDeleting" msprop:Generator_RowChangingName="ASN_MST_GRIDRowChanging" msprop:Generator_RowEvHandlerName="ASN_MST_GRIDRowChangeEventHandler" msprop:Generator_RowDeletedName="ASN_MST_GRIDRowDeleted" msprop:Generator_RowClassName="ASN_MST_GRIDRow" msprop:Generator_UserTableName="ASN_MST_GRID" msprop:Generator_RowEvArgName="ASN_MST_GRIDRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DN" msprop:Generator_ColumnVarNameInTable="columnDN" msprop:Generator_ColumnPropNameInRow="DN" msprop:Generator_ColumnPropNameInTable="DNColumn" msprop:Generator_UserColumnName="DN" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_UserColumnName="DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER" msprop:Generator_ColumnPropNameInRow="CUSTOMER" msprop:Generator_ColumnPropNameInTable="CUSTOMERColumn" msprop:Generator_UserColumnName="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_QTY" msprop:Generator_ColumnVarNameInTable="columnTOTAL_QTY" msprop:Generator_ColumnPropNameInRow="TOTAL_QTY" msprop:Generator_ColumnPropNameInTable="TOTAL_QTYColumn" msprop:Generator_UserColumnName="TOTAL_QTY" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -66,11 +94,20 @@
       <xs:selector xpath=".//mstns:ASN_PN_QTY" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
+    <xs:unique name="ASN_DTL_GRID_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ASN_DTL_GRID" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="ASN_MST_GRID_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:ASN_MST_GRID" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
       <msdata:Relationship name="ASN_MST_ASN_DTL" msdata:parent="ASN_MST" msdata:child="ASN_DTL" msdata:parentkey="ID" msdata:childkey="MST_ID" msprop:Generator_UserChildTable="ASN_DTL" msprop:Generator_ChildPropName="GetASN_DTLRows" msprop:Generator_UserRelationName="ASN_MST_ASN_DTL" msprop:Generator_RelationVarName="relationASN_MST_ASN_DTL" msprop:Generator_UserParentTable="ASN_MST" msprop:Generator_ParentPropName="ASN_MSTRow" />
       <msdata:Relationship name="ASN_DTL_ASN_PN_QTY" msdata:parent="ASN_DTL" msdata:child="ASN_PN_QTY" msdata:parentkey="ID" msdata:childkey="DTL_ID" msprop:Generator_UserChildTable="ASN_PN_QTY" msprop:Generator_ChildPropName="GetASN_PN_QTYRows" msprop:Generator_UserRelationName="ASN_DTL_ASN_PN_QTY" msprop:Generator_RelationVarName="relationASN_DTL_ASN_PN_QTY" msprop:Generator_UserParentTable="ASN_DTL" msprop:Generator_ParentPropName="ASN_DTLRow" />
+      <msdata:Relationship name="ASN_MST_GRID_ASN_DTL_GRID" msdata:parent="ASN_MST_GRID" msdata:child="ASN_DTL_GRID" msdata:parentkey="ID" msdata:childkey="MST_ID" msprop:Generator_UserChildTable="ASN_DTL_GRID" msprop:Generator_ChildPropName="GetASN_DTL_GRIDRows" msprop:Generator_UserRelationName="ASN_MST_GRID_ASN_DTL_GRID" msprop:Generator_RelationVarName="relationASN_MST_GRID_ASN_DTL_GRID" msprop:Generator_UserParentTable="ASN_MST_GRID" msprop:Generator_ParentPropName="ASN_MST_GRIDRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

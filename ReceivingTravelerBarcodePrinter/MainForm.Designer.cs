@@ -43,6 +43,8 @@
             this.btPrint2D = new DevExpress.XtraBars.BarButtonItem();
             this.btPreview2D = new DevExpress.XtraBars.BarButtonItem();
             this.btPrint1D = new DevExpress.XtraBars.BarButtonItem();
+            this.btPrintDeliveryNote = new DevExpress.XtraBars.BarButtonItem();
+            this.btViewDN = new DevExpress.XtraBars.BarButtonItem();
             this.btCloseFile = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.bsiOfExcelPath = new DevExpress.XtraBars.BarStaticItem();
@@ -135,8 +137,10 @@
             this.btPrint2D,
             this.bsiOfExcelPath,
             this.btPreview2D,
-            this.btCloseFile});
-            this.barManager.MaxItemId = 6;
+            this.btCloseFile,
+            this.btPrintDeliveryNote,
+            this.btViewDN});
+            this.barManager.MaxItemId = 8;
             this.barManager.StatusBar = this.bar3;
             // 
             // bar1
@@ -148,9 +152,11 @@
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btLoadExcel, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btPrint2D, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btPreview2D, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btPreview2D, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btPrint1D, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btCloseFile, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btPrintDeliveryNote, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btViewDN, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btCloseFile, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.AllowQuickCustomization = false;
             this.bar1.OptionsBar.DrawBorder = false;
             this.bar1.OptionsBar.DrawDragBorder = false;
@@ -193,6 +199,24 @@
             this.btPrint1D.Name = "btPrint1D";
             this.btPrint1D.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.btPrint1D.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btPrint1D_ItemClick);
+            // 
+            // btPrintDeliveryNote
+            // 
+            this.btPrintDeliveryNote.Caption = "DeliveryNote";
+            this.btPrintDeliveryNote.Glyph = ((System.Drawing.Image)(resources.GetObject("btPrintDeliveryNote.Glyph")));
+            this.btPrintDeliveryNote.Id = 6;
+            this.btPrintDeliveryNote.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btPrintDeliveryNote.LargeGlyph")));
+            this.btPrintDeliveryNote.Name = "btPrintDeliveryNote";
+            this.btPrintDeliveryNote.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btPrintDeliveryNote_ItemClick);
+            // 
+            // btViewDN
+            // 
+            this.btViewDN.Caption = "Preview DN";
+            this.btViewDN.Glyph = ((System.Drawing.Image)(resources.GetObject("btViewDN.Glyph")));
+            this.btViewDN.Id = 7;
+            this.btViewDN.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btViewDN.LargeGlyph")));
+            this.btViewDN.Name = "btViewDN";
+            this.btViewDN.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btViewDN_ItemClick);
             // 
             // btCloseFile
             // 
@@ -306,5 +330,7 @@
         private DevExpress.XtraBars.BarButtonItem btPreview2D;
         private System.Windows.Forms.PrintDialog printDialog;
         private DevExpress.XtraBars.BarButtonItem btCloseFile;
+        private DevExpress.XtraBars.BarButtonItem btPrintDeliveryNote;
+        private DevExpress.XtraBars.BarButtonItem btViewDN;
     }
 }

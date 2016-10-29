@@ -34,10 +34,8 @@ namespace ReceivingTravelerBarcodePrinter
             }
         }
 
-        public static ASN ToASNDataSet(this DataTable tb)
+        private static void ReadyTb(DataTable tb)
         {
-            ASN asn = new ASN();
-
             for (int i = tb.Rows.Count - 1; i >= 0; i--)
             {
                 if (tb.Rows[i].IsNull(Col.colPO) ||
@@ -59,6 +57,100 @@ namespace ReceivingTravelerBarcodePrinter
                 }
             }
             tb.AcceptChanges();
+        }
+
+        public static ASN ToAsnDNDataSet(this DataTable tb)
+        {
+            ASN asn = new ASN();
+            ReadyTb(tb);
+
+            var qMst = (from x in tb.AsEnumerable()
+                        select new
+                        {
+                            SUPPLIER = x[Col.colSupplier].ToString(),
+                            DN = x[Col.colDN].ToString()
+                        }).Distinct();
+
+            var orderedMst = from x in qMst
+                             orderby x.SUPPLIER, x.DN
+                             select x;
+
+            int mstID = 0;
+            int dtlID = 0;
+            string theDate = string.Empty;
+
+            foreach (var x in orderedMst)
+            {
+                mstID += 1;
+                ASN.ASN_MST_GRIDRow mstRow = asn.ASN_MST_GRID.NewASN_MST_GRIDRow();
+
+                if (tb.Columns[Col.colDate].DataType == typeof(DateTime))
+                {
+                    theDate = tb.AsEnumerable()
+                                .Where(f => f[Col.colDN].ToString() == x.DN)
+                                .First()
+                                .Field<DateTime>(Col.colDate)
+                                .ToString("yyyy-MM-dd");
+                }
+                else
+                {
+                    theDate = tb.AsEnumerable()
+                                .Where(f => f[Col.colDN].ToString() == x.DN)
+                                .First()
+                                .Field<string>(Col.colDate);
+                    theDate = DateTime.Parse(theDate).ToString("yyyy-MM-dd");
+                }
+
+                mstRow.ID = mstID;
+                mstRow.DN = x.DN;
+                mstRow.SUPPLIER = x.SUPPLIER;
+                mstRow.DATE = theDate;
+                mstRow.TOTAL_QTY = 0;
+                asn.ASN_MST_GRID.AddASN_MST_GRIDRow(mstRow);
+
+                var qDtl = (from d in tb.AsEnumerable()
+                            where d[Col.colDN].ToString() == x.DN
+                               && d[Col.colSupplier].ToString() == x.SUPPLIER
+                            select new
+                            {
+                                PO = d[Col.colPO].ToString(),
+                                PN = d[Col.colPN].ToString(),
+                                REV = d[Col.colREV].ToString(),
+                                QTY = d[Col.colQTY].ToString(),
+                                WO = d[Col.colWO].ToString(),
+                                PALLET_NO = d[Col.colPalletNO].ToString()
+                            }).OrderBy(f => f.PO).ThenBy(f => f.PN);
+
+
+                int no = 0;
+                foreach (var d in qDtl)
+                {
+                    no += 1;
+                    dtlID += 1;
+                    ASN.ASN_DTL_GRIDRow dtlRow = asn.ASN_DTL_GRID.NewASN_DTL_GRIDRow();
+                    dtlRow.ID = dtlID;
+                    dtlRow.MST_ID = mstID;
+                    dtlRow.NO = no;
+                    dtlRow.PO = d.PO;
+                    dtlRow.PN = d.PN;
+                    dtlRow.REV = d.REV;
+                    dtlRow.QTY = decimal.Parse(d.QTY);
+                    dtlRow.WO = d.WO;
+                    dtlRow.PALLET_NO = d.PALLET_NO;                    
+
+                    asn.ASN_DTL_GRID.AddASN_DTL_GRIDRow(dtlRow);
+
+                }
+            }
+
+            return asn;
+        }
+
+        public static ASN ToASNDataSet(this DataTable tb)
+        {
+            ASN asn = new ASN();
+
+            ReadyTb(tb);
 
             string NO = CreateNo();           
 

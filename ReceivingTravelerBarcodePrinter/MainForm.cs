@@ -90,8 +90,17 @@ namespace ReceivingTravelerBarcodePrinter
             DataTable tb = this.gridDesktop.Worksheets[0].ExportDataTable(0, 0, this.gridDesktop.Worksheets[0].RowsCount, this.gridDesktop.Worksheets[0].ColumnsCount, true, true);
             tb.NullValueAsEmpty();
             this.asn.Merge(tb.ToASNDataSet());
+        }
 
+        private void LoadDNData()
+        {
+            this.asn.Clear();
 
+            if (!this.CheckDataPassed()) return;
+
+            DataTable tb = this.gridDesktop.Worksheets[0].ExportDataTable(0, 0, this.gridDesktop.Worksheets[0].RowsCount, this.gridDesktop.Worksheets[0].ColumnsCount, true, true);
+            tb.NullValueAsEmpty();
+            this.asn.Merge(tb.ToAsnDNDataSet());
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -170,6 +179,38 @@ namespace ReceivingTravelerBarcodePrinter
             this.btPreview2D.Enabled = false;
             this.btCloseFile.Enabled = false;
             this.bsiOfExcelPath.Caption = "Ready";
+        }
+
+        private void btPrintDeliveryNote_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.LoadDNData();
+
+            if (this.asn.ASN_MST_GRID.Count > 0)
+            {
+                if (this.printDialog.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
+                {
+                    ASNDNReport report = new ASNDNReport();
+                    report.SetDataSet(this.asn);
+                    report.DoPrint(this.printDialog.PrinterSettings.PrinterName);
+                }
+            }
+            else
+            {
+                Messenger.ShowMessage(this, "当前文档没有任何数据,无法进行打印操作!");
+            }
+        }
+
+        private void btViewDN_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.LoadDNData();
+            if (this.asn.ASN_MST_GRID.Count > 0)
+            {
+                ASNDNReport report = new ASNDNReport();
+                report.SetDataSet(this.asn);
+                report.DisplayName = "ERGOTRON_DeliveryNote";
+                report.Name = "ERGOTRON_DeliveryNote";
+                report.Preview();
+            }
         }
 
 

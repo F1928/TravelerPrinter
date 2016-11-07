@@ -109,6 +109,8 @@ namespace ReceivingTravelerBarcodePrinter
             this.btPrint2D.Enabled = false;
             this.btPreview2D.Enabled = false;
             this.btCloseFile.Enabled = false;
+            this.btPrintDeliveryNote.Enabled = false;
+            this.btViewDN.Enabled = false;
         }
 
         private void btLoadExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -123,6 +125,8 @@ namespace ReceivingTravelerBarcodePrinter
                 this.btPrint2D.Enabled = true;
                 this.btPreview2D.Enabled = true;
                 this.btCloseFile.Enabled = true;
+                this.btPrintDeliveryNote.Enabled = true;
+                this.btViewDN.Enabled = true;
                 this.gridDesktop.Worksheets[0].IntelligentSkip();
             }
         }
@@ -178,6 +182,8 @@ namespace ReceivingTravelerBarcodePrinter
             this.btPrint2D.Enabled = false;
             this.btPreview2D.Enabled = false;
             this.btCloseFile.Enabled = false;
+            this.btPrintDeliveryNote.Enabled = false;
+            this.btViewDN.Enabled = false;
             this.bsiOfExcelPath.Caption = "Ready";
         }
 

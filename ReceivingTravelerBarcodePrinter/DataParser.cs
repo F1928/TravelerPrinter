@@ -267,8 +267,8 @@ namespace ReceivingTravelerBarcodePrinter
                         qtyRow.PN = q.PN;
                         qtyRow.REV = q.REV;
                         qtyRow.QTY = q.QTY;
-                        // PN条码的格式： PN<HT><HT><HT>
-                        qtyRow.PN_BCD = string.Format("{0}{1}{1}{1}", q.PN, (char)Keys.Tab);
+                        // PN条码的格式： PN<HT><HT><HT><HT>
+                        qtyRow.PN_BCD = string.Format("{0}{1}{1}{1}{1}", q.PN, (char)Keys.Tab);
                         // Quantity条码的格式: <HT>QTY<HT><CR>
                         qtyRow.QTY_BCD = string.Format("{0}{1}{2}{3}", (char)Keys.Tab, q.QTY, (char)Keys.Tab, (char)Keys.Enter);
                         qtyRow.DTL_ID = dtlID;

@@ -64,6 +64,7 @@
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupHeaderOfMst = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
@@ -75,7 +76,6 @@
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -377,7 +377,9 @@
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel2,
-            this.xrLabel1});
+            this.xrLabel1,
+            this.xrPageInfo1,
+            this.xrLabel17});
             this.PageHeader.HeightF = 70.83334F;
             this.PageHeader.Name = "PageHeader";
             // 
@@ -421,18 +423,27 @@
             this.GroupHeaderOfMst.PageBreak = DevExpress.XtraReports.UI.PageBreak.BeforeBandExceptFirstEntry;
             this.GroupHeaderOfMst.RepeatEveryPage = true;
             // 
+            // xrLabel18
+            // 
+            this.xrLabel18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.DN")});
+            this.xrLabel18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 67.58334F);
+            this.xrLabel18.Name = "xrLabel18";
+            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel18.SizeF = new System.Drawing.SizeF(2F, 2F);
+            this.xrLabel18.StylePriority.UseFont = false;
+            // 
             // GroupFooter1
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPageInfo1,
-            this.xrLabel17,
             this.xrLabel15,
             this.xrLabel16,
             this.xrLabel13,
             this.xrLabel14,
             this.xrLabel12,
             this.xrLabel11});
-            this.GroupFooter1.HeightF = 55.99998F;
+            this.GroupFooter1.HeightF = 55.99999F;
             this.GroupFooter1.Name = "GroupFooter1";
             this.GroupFooter1.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBandExceptLastEntry;
             this.GroupFooter1.RepeatEveryPage = true;
@@ -440,7 +451,7 @@
             // xrPageInfo1
             // 
             this.xrPageInfo1.Format = "{0:yyyy.MM.dd HH:mm:ss}";
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(531.8751F, 32.99998F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(536.8817F, 10.00001F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
@@ -449,7 +460,7 @@
             // xrLabel17
             // 
             this.xrLabel17.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(462.0834F, 32.99998F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(467.09F, 10.00001F);
             this.xrLabel17.Name = "xrLabel17";
             this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel17.SizeF = new System.Drawing.SizeF(69.79163F, 23F);
@@ -469,7 +480,7 @@
             // xrLabel16
             // 
             this.xrLabel16.Font = new System.Drawing.Font("黑体", 11F);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(547.5001F, 10F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(462.0834F, 32.99999F);
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel16.SizeF = new System.Drawing.SizeF(64.87512F, 23F);
@@ -531,17 +542,6 @@
             this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo2.RunningBand = this.GroupHeaderOfMst;
             this.xrPageInfo2.SizeF = new System.Drawing.SizeF(54.16663F, 23F);
-            // 
-            // xrLabel18
-            // 
-            this.xrLabel18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.DN")});
-            this.xrLabel18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 67.58334F);
-            this.xrLabel18.Name = "xrLabel18";
-            this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel18.SizeF = new System.Drawing.SizeF(2F, 2F);
-            this.xrLabel18.StylePriority.UseFont = false;
             // 
             // ASNDNReport
             // 

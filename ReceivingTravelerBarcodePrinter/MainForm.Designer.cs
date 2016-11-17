@@ -183,7 +183,7 @@
             // 
             // btPreview2D
             // 
-            this.btPreview2D.Caption = "Preview";
+            this.btPreview2D.Caption = "Traveler";
             this.btPreview2D.Glyph = ((System.Drawing.Image)(resources.GetObject("btPreview2D.Glyph")));
             this.btPreview2D.Id = 4;
             this.btPreview2D.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btPreview2D.LargeGlyph")));
@@ -211,7 +211,7 @@
             // 
             // btViewDN
             // 
-            this.btViewDN.Caption = "Preview DN";
+            this.btViewDN.Caption = "Delivery";
             this.btViewDN.Glyph = ((System.Drawing.Image)(resources.GetObject("btViewDN.Glyph")));
             this.btViewDN.Id = 7;
             this.btViewDN.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btViewDN.LargeGlyph")));

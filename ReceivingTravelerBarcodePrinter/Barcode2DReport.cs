@@ -12,8 +12,8 @@ namespace ReceivingTravelerBarcodePrinter
         public Barcode2DReport()
         {
             InitializeComponent();
-            //<HT><CR>2<BS>2<BS>2<BS>2<BS>
-            this.xrBarCodeEnter.Text = string.Format("{0}{1}{2}{3}{2}{3}{2}{3}{2}{3}", (char)Keys.Tab, (char)Keys.Enter, 2,(char)Keys.Back);
+            //<HT><CR><HT><HT><HT><HT>2<BS>
+            this.xrBarCodeEnter.Text = string.Format("{0}{1}{0}{0}{0}{0}{2}{3}", (char)Keys.Tab, (char)Keys.Enter, 2,(char)Keys.Back);
         }
 
         public void SetDataSet(ASN asnDs)

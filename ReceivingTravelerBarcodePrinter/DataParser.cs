@@ -119,7 +119,7 @@ namespace ReceivingTravelerBarcodePrinter
                                 QTY = d[Col.colQTY].ToString(),
                                 WO = d[Col.colWO].ToString(),
                                 PALLET_NO = d[Col.colPalletNO].ToString()
-                            }).OrderBy(f => f.PO).ThenBy(f => f.PN);
+                            }).OrderBy(f => f.PALLET_NO).ThenBy(f => f.PN).ThenBy(f => f.PO);
 
 
                 int no = 0;
@@ -269,8 +269,8 @@ namespace ReceivingTravelerBarcodePrinter
                         qtyRow.QTY = q.QTY;
                         // PN条码的格式： PN<HT><HT><HT><HT>
                         qtyRow.PN_BCD = string.Format("{0}{1}{1}{1}{1}", q.PN, (char)Keys.Tab);
-                        // Quantity条码的格式: <HT>QTY<HT><CR>
-                        qtyRow.QTY_BCD = string.Format("{0}{1}{2}{3}", (char)Keys.Tab, q.QTY, (char)Keys.Tab, (char)Keys.Enter);
+                        // Quantity条码的格式: <HT><HT><HT>QTY<HT><CR>
+                        qtyRow.QTY_BCD = string.Format("{0}{0}{0}{1}{0}{2}", (char)Keys.Tab, q.QTY, (char)Keys.Enter);
                         qtyRow.DTL_ID = dtlID;
                         mstRow.TOTAL_QTY += q.QTY;
                         asn.ASN_PN_QTY.AddASN_PN_QTYRow(qtyRow);

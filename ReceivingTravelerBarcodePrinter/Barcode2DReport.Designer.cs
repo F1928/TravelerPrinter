@@ -639,7 +639,7 @@
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(682F, 0F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo1.RunningBand = this.DetailReport1;
+            this.xrPageInfo1.RunningBand = this.GroupHeaderOfMst;
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(100F, 23F);
             this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;

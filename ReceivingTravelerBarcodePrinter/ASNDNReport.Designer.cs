@@ -31,7 +31,7 @@
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabelCustomer = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
@@ -110,15 +110,15 @@
             this.xrLabel4.StylePriority.UseFont = false;
             this.xrLabel4.Text = "Customer:";
             // 
-            // xrLabel5
+            // xrLabelCustomer
             // 
-            this.xrLabel5.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(416.0771F, 0F);
-            this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(260.9644F, 23F);
-            this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.Text = "东莞铭异精密电子有限公司";
+            this.xrLabelCustomer.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabelCustomer.LocationFloat = new DevExpress.Utils.PointFloat(416.0771F, 0F);
+            this.xrLabelCustomer.Name = "xrLabelCustomer";
+            this.xrLabelCustomer.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabelCustomer.SizeF = new System.Drawing.SizeF(260.9644F, 23F);
+            this.xrLabelCustomer.StylePriority.UseFont = false;
+            this.xrLabelCustomer.Text = "东莞爱格升精密电子有限公司";
             // 
             // xrLabel6
             // 
@@ -432,7 +432,7 @@
             this.xrLabel10,
             this.xrLabel7,
             this.xrLabel6,
-            this.xrLabel5,
+            this.xrLabelCustomer,
             this.xrLabel4,
             this.xrLabel3,
             this.xrTable1,
@@ -582,7 +582,7 @@
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeaderOfMst;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabelCustomer;
         private DevExpress.XtraReports.UI.XRLabel xrLabel7;
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;

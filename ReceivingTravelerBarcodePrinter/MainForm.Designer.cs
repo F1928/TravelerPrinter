@@ -248,6 +248,7 @@
             this.bsiOfExcelPath.Name = "bsiOfExcelPath";
             this.bsiOfExcelPath.Size = new System.Drawing.Size(800, 0);
             this.bsiOfExcelPath.TextAlignment = System.Drawing.StringAlignment.Near;
+            this.bsiOfExcelPath.Width = 800;
             // 
             // barDockControlTop
             // 
@@ -293,7 +294,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Receiving Traveler v2.0";
+            this.Text = "Receiving Traveler v2.5";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

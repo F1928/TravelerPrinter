@@ -221,35 +221,35 @@
             this.xrTableCell4.CanGrow = false;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.Text = "PN";
-            this.xrTableCell4.Weight = 1.4755249023186723D;
+            this.xrTableCell4.Weight = 1.9110664909914772D;
             // 
             // xrTableCell2
             // 
             this.xrTableCell2.CanGrow = false;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.Text = "REV";
-            this.xrTableCell2.Weight = 0.69384699384623749D;
+            this.xrTableCell2.Weight = 0.69467392615179291D;
             // 
             // xrTableCell3
             // 
             this.xrTableCell3.CanGrow = false;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Text = "Qty";
-            this.xrTableCell3.Weight = 0.81978296098516479D;
+            this.xrTableCell3.Weight = 0.78127914288649913D;
             // 
             // xrTableCell6
             // 
             this.xrTableCell6.CanGrow = false;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Text = "WO";
-            this.xrTableCell6.Weight = 1.6320947883354244D;
+            this.xrTableCell6.Weight = 1.5422546141409805D;
             // 
             // xrTableCell7
             // 
             this.xrTableCell7.CanGrow = false;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Text = "Pallet No";
-            this.xrTableCell7.Weight = 1.6320947883354244D;
+            this.xrTableCell7.Weight = 1.3240702596501739D;
             // 
             // TopMargin
             // 
@@ -339,7 +339,7 @@
             this.xrTableCell10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.ASN_MST_GRID_ASN_DTL_GRID.PN")});
             this.xrTableCell10.Name = "xrTableCell10";
-            this.xrTableCell10.Weight = 1.4755249023186723D;
+            this.xrTableCell10.Weight = 1.9110670550012343D;
             // 
             // xrTableCell11
             // 
@@ -347,7 +347,7 @@
             this.xrTableCell11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.ASN_MST_GRID_ASN_DTL_GRID.REV")});
             this.xrTableCell11.Name = "xrTableCell11";
-            this.xrTableCell11.Weight = 0.69384699384623749D;
+            this.xrTableCell11.Weight = 0.69467355014528831D;
             // 
             // xrTableCell12
             // 
@@ -355,7 +355,7 @@
             this.xrTableCell12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.ASN_MST_GRID_ASN_DTL_GRID.QTY")});
             this.xrTableCell12.Name = "xrTableCell12";
-            this.xrTableCell12.Weight = 0.81978296098516479D;
+            this.xrTableCell12.Weight = 0.781279142886499D;
             // 
             // xrTableCell16
             // 
@@ -363,7 +363,7 @@
             this.xrTableCell16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.ASN_MST_GRID_ASN_DTL_GRID.WO")});
             this.xrTableCell16.Name = "xrTableCell16";
-            this.xrTableCell16.Weight = 1.6320947883354244D;
+            this.xrTableCell16.Weight = 1.5422546141409803D;
             // 
             // xrTableCell17
             // 
@@ -371,7 +371,7 @@
             this.xrTableCell17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "ASN_MST_GRID.ASN_MST_GRID_ASN_DTL_GRID.PALLET_NO")});
             this.xrTableCell17.Name = "xrTableCell17";
-            this.xrTableCell17.Weight = 1.6320947883354244D;
+            this.xrTableCell17.Weight = 1.3240700716469216D;
             // 
             // PageHeader
             // 

@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gridDesktop = new Aspose.Cells.GridDesktop.GridDesktop();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.asn = new ReceivingTravelerBarcodePrinter.ASN();
-            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager = new DevExpress.XtraBars.BarManager();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.btLoadExcel = new DevExpress.XtraBars.BarButtonItem();
             this.btPrint2D = new DevExpress.XtraBars.BarButtonItem();
@@ -294,7 +293,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Receiving Traveler v2.5";
+            this.Text = "Receiving Traveler v2.6";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

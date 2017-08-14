@@ -19,6 +19,12 @@ namespace ReceivingTravelerBarcodePrinter
             this.asn.Merge(asnDs);
         }
 
+        public string Customer
+        {
+            get { return this.xrLabelCustomer.Text; }
+            set { this.xrLabelCustomer.Text = value; }
+        }
+
         public void Preview()
         {
             this.ShowPreview();

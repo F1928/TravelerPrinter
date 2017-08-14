@@ -196,6 +196,7 @@ namespace ReceivingTravelerBarcodePrinter
                 if (this.printDialog.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
                 {
                     ASNDNReport report = new ASNDNReport();
+                    report.Customer = Properties.Settings.Default.ASN_Customer;
                     report.SetDataSet(this.asn);
                     report.DoPrint(this.printDialog.PrinterSettings.PrinterName);
                 }
